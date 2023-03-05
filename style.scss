@@ -1,0 +1,105 @@
+// 00ABB3 - светло-бирюзовый
+// 05878D - темно-бирюзовый
+// 7FBCD1 - темно-голубой
+// 839AA8 - светло-серый
+// 3C3F41 - темно-серый
+
+@import "adaptive-value.scss";
+
+// Обнуление
+* {margin: 0; padding: 0; border: 0;}
+*, *::before, *::after {box-sizing: border-box;}
+:focus, :active {outline: none;}
+a:focus, a:active{outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {height: 100%; width: 100%; font-size: 100%; line-height: 100%; font-size: 14px;}
+html {overflow-x: hidden;}
+input, button, textarea {font-family: inherit;}
+button {cursor: pointer;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
+html, body {margin: 0; padding: 0; border: 0;}
+
+.header {
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+
+    // .header__body
+    &__body {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    // .header__menu
+    &__menu {
+        margin-left: 300px;
+	}
+}
+
+.menu-item {
+    padding: 27px 18px;
+    font-family: Comfortaa, sans-serif;
+    text-decoration: none;
+    @include adaptive-value("font-size", 24, 20, 1);
+    color: #3C3F41;
+
+    &:hover {
+        color: #05878D;
+    }
+
+    &:nth-child(1) {
+        font-weight: bold;
+    }
+}
+
+.welcome {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__bg {
+        position: absolute;
+        background: url('images/bg.jpg') center/cover no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__icon {
+        position: absolute;
+        background: url('images/logo_white.svg');
+        background-size: contain;
+        min-width: 323px;
+        min-height: 366px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.footer {
+    position: relative;
+    width: 100vw;
+    // height: 100vh;
+    background-color: #05878D;
+
+    &__body {
+        width: 700px;
+        height: 100px;
+        margin: 0 auto;
+        // background-color: #fff;
+    }
+}
+
+    
