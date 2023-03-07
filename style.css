@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: Comfortaa, sans-serif;
 }
 
 *, *::before, *::after {
@@ -129,6 +130,24 @@ html, body {
 }
 .footer__body {
   width: 700px;
-  height: 100px;
+  height: 500px;
   margin: 0 auto;
+}
+.footer__content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+.footer__icon {
+  width: 160px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+}
+
+._component-title {
+  display: block;
+  text-align: center;
+  font-size: 36px;
 }/*# sourceMappingURL=style.css.map */

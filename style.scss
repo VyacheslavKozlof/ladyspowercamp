@@ -7,7 +7,7 @@
 @import "adaptive-value.scss";
 
 // Обнуление
-* {margin: 0; padding: 0; border: 0;}
+* {margin: 0; padding: 0; border: 0; font-family: Comfortaa, sans-serif;}
 *, *::before, *::after {box-sizing: border-box;}
 :focus, :active {outline: none;}
 a:focus, a:active{outline: none;}
@@ -96,10 +96,28 @@ html, body {margin: 0; padding: 0; border: 0;}
 
     &__body {
         width: 700px;
-        height: 100px;
+        height: 500px;
         margin: 0 auto;
-        // background-color: #fff;
     }
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: relative;
+    }
+    &__icon {
+        width: 160px;
+        height: 180px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+._component-title {
+    display: block;
+    text-align: center;
+    font-size: 36px;
 }
 
     
