@@ -136,14 +136,34 @@ html, body {
 .footer__content {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 20px 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .footer__icon {
-  width: 160px;
-  height: 180px;
+  width: 200px;
+  height: 220px;
   display: block;
   margin: 0 auto;
+}
+.footer__contacts {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.footer__contact {
+  font-size: 36px;
+  color: aliceblue;
+  padding: 0 5px;
+}
+.footer__privacy-policy {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: aliceblue;
 }
 
 ._component-title {
