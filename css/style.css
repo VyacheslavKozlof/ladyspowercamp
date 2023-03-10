@@ -129,7 +129,7 @@ html, body {
   background-color: #05878D;
 }
 .footer__body {
-  width: 700px;
+  width: 100%;
   height: 500px;
   margin: 0 auto;
 }
